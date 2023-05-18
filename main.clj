@@ -1,28 +1,34 @@
-(println(str "4 tem tipo: "(type 4)))
-(println(str "9.99 tem tipo: "(type 9.99)))
-(println(str "a tem tipo: "(type \a)))
-(println(str "Hello turma tem tipo: "(type "hello turma...")))
-(println(str "true tem tipo: "(type true)))
-(println(str "false tem tipo: "(type false)))
-(println '(+ 2 3))
-(println ( eval '(+ 2 3) ) )
+((fn [a](println a))"Hello Wold")
+(def func (fn [a](println a)))
+(func "hello wold...")
 
-(def A "Hello")
-(def B "Wolrd")
-(println (str A B))
+(defn soma [a b] (+ a b))
+(println (soma 3 5))
 
-(def A 10)
-(def B 20)
+(if (= 2 2 (- 9 7))
+    (println "Verdadeiro")
+    (println "falso"))
 
-(println (+ A B))
-(println (+ A 2))
-(println (+ B 2))
 
-(println (str "A=" A))
-(println (str "B=" B))
+(def A 5)
+(def B 3)
 
-(def A 100)
-(def B 200)
+(def C (rem B A))
 
-(println (str "A=" A))
-(println (str "B=" B))
+(if ( = C 0)
+    (do
+        (println "uscs")
+        (println "professor")
+    )
+    (do
+        (println "Clojure muito legal")
+    )
+)
+(println "C = " C)
+(println "Fim de programa")
+
+
+
+(let [m "professor"]
+      (println m)
+      )
